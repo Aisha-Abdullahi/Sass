@@ -1,14 +1,12 @@
-:root {
-    --color-primary: red;
-    --color-secondary: green;
-    --color-tertiary: blue;
-}
+$color-primary: red;
+$color-secondary: green;
+$color-tertiary: blue;
 
 div {
     display: table;
     width: 90%;
     border-collapse: collapse;
-    border: 2px solid var(--color-primary);
+    border: 2px solid $color-primary;
     margin: 20px;
 
     section {
@@ -17,31 +15,31 @@ div {
 
     article {
         display: table-cell;
-        border: 2px solid var(--color-secondary);
+        border: 2px solid $color-secondary;
         padding: 10px;
         text-align: center;
 
         &:nth-of-type(odd) {
             p {
-                color: var(--color-tertiary);
+                color: $color-tertiary;
             }
         }
 
         &:nth-of-type(even) {
             p {
-                color: var(--color-primary);
+                color: $color-primary;
             }
         }
     }
 
     h1 {
-        color: var(--color-secondary);
+        color: $color-secondary;
         text-align: center;
         margin-bottom: 0;
     }
 
     hr {
-        color: var(--color-tertiary);
+        color: $color-tertiary;
         width: 45%;
     }
 }
